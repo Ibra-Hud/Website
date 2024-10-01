@@ -1,0 +1,466 @@
+@import url();
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color:rgb(255, 255, 255);
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo h2{
+    font-size: 1.6rem;
+    color:aqua;
+    font-size: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color:aqua;
+    border-bottom: 3px solid;
+}
+
+@media(max-width:995px){
+    nav{
+        position:absolute;
+        display: none;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #00ffff;
+        border-bottom: 3px solid #00ffff;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 00.5rem solid;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem 9%;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black; 
+}
+
+.home-info-p{
+    font-weight: 500;
+    font-size: medium;
+}
+
+.home .home-info h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: aqua;
+}
+
+.home-info h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+
+.profile-img{
+    border-radius: 50%;
+}
+
+.profile-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #00ffff;
+}
+
+.profile-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translate();
+    background-color: #00ffff;
+    box-shadow: 0 0 25px #00ffff;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #00ffff;
+    color: #161616;
+    box-shadow: 0 0 25px #00ffff;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Software Developer";
+    color: #00ffff;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: solid #161616;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #ffffff;
+    right: -8;
+    animation: cursor 1s infinite
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #161616;
+    }
+}
+
+/* Try in JavaScript */
+@keyframes words{
+    0%, 0.9%{
+        content: "S"}
+
+    1%, 1.9%{
+        content: "So";}
+
+    2%, 2.9%{
+        content: "Sof";}
+
+    3%, 3.9%{
+        content: "Soft";}
+
+    4%, 4.9%{
+        content: "Softw"; }
+
+    5%, 5.9%{
+        content: "Softwa"; }
+
+    6%, 6.9%{
+        content: "Softwar";}
+
+    7%, 7.9%{
+        content: "Software";}
+
+    8%, 8.9%{
+        content: "Software ";}
+
+    9%, 9.9%{
+        content: "Software D";}
+
+    10%, 10.9%{
+        content: "Software De";}
+
+    11%, 11.9%{
+        content: "Software Dev";}
+
+    12%, 12.9%{
+        content: "Software Deve";}
+    
+    13%, 13.9%{
+        content: "Software Devel";}
+
+    14%, 14.9%{
+        content: "Software Develo";}
+
+    15%, 15.9%{
+        content: "Software Develop";}
+
+    16%, 16.9%{
+        content: "Software Develope";}
+
+    17%, 17.9%{
+        content: "Software Developer";}
+
+    18%, 18.9%{
+        content: "W";}
+
+    19%, 19.9%{
+        content: "We";}
+
+    20%, 20.9%{
+        content: "Web";}
+
+    21%, 21.9%{
+        content: "Web ";}
+
+    22%, 22.9%{
+        content: "Web D";}
+
+    23%, 23.9%{
+        content: "Web De";}
+
+    24%, 24.9%{
+        content: "Web Dev";}
+
+    25%, 25.9%{
+        content: "Web Deve";}
+
+    26%, 26.9%{
+        content: "Web Devel";}
+
+    27%, 27.9%{
+        content: "Web Develo";}
+
+    28%, 28.9%{
+        content: "Web Develop";}
+
+    29%, 29.9%{
+        content: "Web Develope";}
+
+    30%, 30.9%{
+        content: "Web Developer";}
+
+    31%, 31.9%{
+        content: "M";}
+
+    32%, 32.9%{
+        content: "Ma";}
+
+    33%, 33.9%{
+        content: "Mar";}
+
+    34%, 34.9%{
+        content: "Marc";}
+
+    35%, 35.9%{
+        content: "Marcy";}
+
+    36%, 36.9%{
+        content: "Marcy ";}
+
+    37%, 37.9%{
+        content: "Marcy L";}
+
+    38%, 38.9%{
+        content: "Marcy La";}
+
+    39%, 39.9%{
+        content: "Marcy Lab";}
+
+    40%, 40.9%{
+        content: "Marcy Lab ";}
+
+    41%, 41.9%{
+        content: "Marcy Lab F";}
+
+    42%, 42.9%{
+        content: "Marcy Lab Fe";}
+
+    43%, 43.9%{
+        content: "Marcy Lab Fel";}
+
+    44%, 44.9%{
+        content: "Marcy Lab Fell";}
+
+    45%, 45.9%{
+        content: "Marcy Lab Fello";}
+
+    46%, 46.9%{
+        content: "Marcy Lab Fellow";}
+
+    47%, 47.9%{
+        content: "P";}
+
+    48%, 48.9%{
+        content: "Ph";}
+
+    49%, 49.9%{
+        content: "Pho";}
+
+    50%, 50.9%{
+        content: "Phot";}
+
+    51%, 51.9%{
+        content: "Photo";}
+
+    52%, 52.9%{
+        content: "Photog";}
+
+    53%, 53.9%{
+        content: "Photogr";}
+
+    54%, 54.9%{
+        content: "Photogra";}
+
+    55%, 55.9%{
+        content: "Photograp";}
+
+    56%, 56.9%{
+        content: "Photograph";}
+
+    57%, 57.9%{
+        content: "Photographe";}
+
+    58%, 58.9%{
+        content: "Photographer";}
+
+    59%, 59.9%{
+        content: "E";}
+
+    60%, 60.9%{
+        content: "En";}
+
+    61%, 61.9%{
+        content: "Ent";}
+
+    62%, 62.9%{
+        content: "Enth";}
+
+    63%, 63.9%{
+        content: "Enthu";}
+
+    64%, 64.9%{
+        content: "Enthus";}
+
+    65%, 65.9%{
+        content: "Enthusi";}
+
+    70%, 70.9%{
+        content: "Enthusia";}
+
+    71%, 71.9%{
+        content: "Enthusias";}
+
+    72%, 72.9%{
+        content: "Enthusiast";}
+    
+    73%, 73.9%{
+        content: "L";}
+
+    74%, 74.9%{
+        content: "Le";}
+
+    75%, 75.9%{
+        content: "Lea";}
+    
+    76%, 76.9%{
+        content: "Lear";}
+
+    77%, 77.9%{
+        content: "Learn";}
+
+    78%, 78.9%{
+        content: "Learne";}
+
+    79%, 100%{
+        content: "Learner";}
+}
+
+@media(max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+}
+
+.home.home-content h3{
+    font-size: 2.5rem;
+}
+
+.home-content h1{
+    font-size: 5rem;
+}
+
+.home-img img{
+    margin-top: 4rem;
+
+}
+
+.ProExp{
+    font-size: medium;
+    
+}
+
+.skills{
+    font-size: 62.5%;
+    color: #00ffff;
+}
+
+
