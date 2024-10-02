@@ -35,6 +35,19 @@ check(1, "1")
 ```
 but if we used "===" it would evaluate to false.
 
+To get the current time in military format we can use this code below...
+```js
+const printTime = () => {
+    const time = new Date();
+    let hours = time.getHours()
+    let minutes = time.getMinutes()
+    let seconds = time.getSeconds()
+
+    console.log(`${hours}:${minutes}:${seconds}`)
+}
+
+printTime()
+```
 
 ## Git
 Basic Git Order
