@@ -46,3 +46,8 @@ git commit
 git clone
 git push
 ```
+
+Best way to create a branch and switch to it
+```sh
+git checkout -b <branch_name>
+```
