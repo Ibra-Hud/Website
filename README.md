@@ -51,3 +51,9 @@ Best way to create a branch and switch to it
 ```sh
 git checkout -b <branch_name>
 ```
+
+Best practice to merge a branch into the main 
+```sh
+git checkout main # switch to the main branch
+git merge <branch_name> # merge a branch into the current branch
+```
