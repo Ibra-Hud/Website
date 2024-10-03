@@ -482,8 +482,14 @@ span{
 }
 
 .skills{
-    font-size: 62.5%;
-    color: rgb(65, 182, 112);
+    font-size: medium;
+    background-color: rgb(65, 182, 112);
+}
+
+.skills .skills-head{
+    color: #161616;
+    text-align: center;
+    justify-content: center; 
 }
 
 
