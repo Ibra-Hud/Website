@@ -478,18 +478,50 @@ span{
     color: #e8e7e7;
     position: relative;
     background-color: rgb(31, 31, 31);
-    
+    position: relative;
+    text-align: center;
+    justify-content: center; 
 }
 
 .skills{
     font-size: medium;
-    background-color: rgb(65, 182, 112);
 }
 
 .skills .skills-head{
     color: #161616;
     text-align: center;
     justify-content: center; 
+    background-color: rgb(65, 182, 112);
 }
 
+.skills .skills-technical{
+    position: relative;
+    text-align: center;
+    justify-content: center; 
+}
+
+.skills .skills-behavioral{
+    position: relative;
+    text-align: center;
+    justify-content: center; 
+}
+
+.projects .projects-head{
+    font-size: medium;
+    position: relative;
+    text-align: center;
+    justify-content: center; 
+    color: #161616;
+    background-color: rgb(65, 182, 112);
+}
+
+.projects .projects-body{
+    font-size: medium;
+    color: #e8e7e7;
+    position: relative;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    text-align: center;
+    justify-content: center; 
+}
 
