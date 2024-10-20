@@ -18,7 +18,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background-color: rgb(31, 31, 31);
+  background-color: black;
   color: rgb(255, 255, 255);
 }
 
@@ -64,22 +64,22 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: #7fffd4;
+  color: #fa6e49;
   border-bottom: 3px solid;
 }
 
 @media (max-width: 995px) {
   nav {
-    position: absolute;
+    position: relative;
     display: none;
     top: 100%;
     right: 0;
     width: 40%;
-    border-left: 3px solid #00ffff;
-    border-bottom: 3px solid #00ffff;
+    border-left: 3px solid #fa6e49;
+    border-bottom: 3px solid #fa6e49;
     border-bottom-left-radius: 2rem;
     padding: 1rem solid;
-    background: rgb(31, 31, 31);
+    background: black;
     border-top: 0.1rem solid rgb(31, 31, 31);
   }
 
@@ -106,28 +106,18 @@ section {
   size: relative;
 }
 
-section .home {
+.home {
   min-height: 100vh;
   height: fit-content;
   padding: 5rem 9% 5rem 9%;
   size: relative;
-}
-
-section .ProExp {
-  height: fit-content;
-  padding: 5rem 9% 5rem 9%;
-  background-color: #161616;
-  size: relative;
-}
-
-.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  size: relative;
-  height: 100vh;
   gap: 8rem;
-  background-color: rgb(31, 31, 31);
+  background-image: url(/images/raphael-lopes-2mv4b5YfnFA-unsplash.jpg);
+  background-size: 180vh;
+  background-position: center;
 }
 
 .home-info-p {
@@ -141,13 +131,8 @@ section .ProExp {
   line-height: 1.3;
 }
 
-.home .home-info {
-  background-color: rgb(31, 31, 31);
-  font-size: 10rem;
-}
-
 span {
-  color: #7fffd4;
+  color: #fa6e49;
   font-size: 8.5rem;
 }
 
@@ -157,37 +142,18 @@ span {
   font-weight: 700;
 }
 
-.profile-img {
-  border-radius: 50%;
-}
-
-.profile-img img {
-  position: relative;
-  top: 3rem;
-  cursor: pointer;
-  transition: 0.4s ease-in;
-  width: 23vw;
-  height: 32vw;
-  box-shadow: 0 0 25px solid #7fffd4;
-}
-
-.profile-img img:hover {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
 .social-icons a:hover {
   color: black;
   transform: scale(1.3) translate();
-  background-color: #7fffd4;
-  box-shadow: 0 0 25px #7fffd4;
+  background-color: #fa6e49;
+  box-shadow: 0 0 25px #fa6e49;
 }
 
 .btn:hover {
   transform: scale3d(1.03);
-  background-color: #7fffd4;
-  color: #161616;
-  box-shadow: 0 0 25px #7fffd4;
+  background-color: #fa6e49;
+  color: black;
+  box-shadow: 0 0 25px #fa6e49;
 }
 
 .typing-text {
@@ -202,13 +168,12 @@ span {
 
 .typing-text span::before {
   content: "Software Developer";
-  color: #7fffd4;
+  color: #fa6e49;
   animation: words 20s infinite;
 }
 
 .typing-text span::after {
   content: "";
-  background-color: solid #161616;
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
@@ -219,7 +184,7 @@ span {
 
 @keyframes cursor {
   to {
-    border-left: 3px solid #161616;
+    border-left: 3px solid black;
   }
 }
 
@@ -630,69 +595,4 @@ span {
 
 .home-img img {
   margin-top: 4rem;
-}
-
-.ProExp {
-  font-size: medium;
-  background-color: #7fffd4;
-  size: relative;
-  height: fit-content;
-}
-
-.ProExp .ProExp-head {
-  color: white;
-  text-align: center;
-  justify-content: center;
-}
-
-.ProExp .ProExp-body {
-  font-size: large;
-  color: #e8e7e7;
-  position: relative;
-  text-align: center;
-  justify-content: center;
-}
-
-.skills {
-  font-size: medium;
-  size: relative;
-  height: fit-content;
-}
-
-.skills .skills-head {
-  color: #161616;
-  text-align: center;
-  justify-content: center;
-  background-color: #7fffd4;
-}
-
-.skills .skills-technical {
-  position: relative;
-  text-align: center;
-  justify-content: center;
-}
-
-.skills .skills-behavioral {
-  position: relative;
-  text-align: center;
-  justify-content: center;
-}
-
-.projects .projects-head {
-  font-size: medium;
-  position: relative;
-  text-align: center;
-  justify-content: center;
-  color: #161616;
-  background-color: #7fffd4;
-}
-
-.projects .projects-body {
-  font-size: medium;
-  color: #e8e7e7;
-  position: relative;
-  background-color: rgb(31, 31, 31);
-  position: relative;
-  text-align: center;
-  justify-content: center;
 }

@@ -39,7 +39,7 @@ header {
 
 .logo h2 {
   font-size: 2rem;
-  color: #7fffd4;
+  color: #fa6e49;
   font-size: 800;
   cursor: pointer;
   transition: 0.5s ease;
@@ -64,7 +64,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: #7fffd4;
+  color: #fa6e49;
   border-bottom: 3px solid;
 }
 
@@ -75,8 +75,8 @@ nav a.active {
     top: 100%;
     right: 0;
     width: 40%;
-    border-left: 3px solid #00ffff;
-    border-bottom: 3px solid #00ffff;
+    border-left: 3px solid #fa6e49;
+    border-bottom: 3px solid #fa6e49;
     border-bottom-left-radius: 2rem;
     padding: 1rem solid;
     background: rgb(31, 31, 31);
@@ -102,11 +102,53 @@ nav a.active {
 }
 
 section {
-  min-height: 100vh;
-  padding: 5rem 9% 5rem 9%;
+  min-height: 50vh;
+  padding: 5rem 9% 5rem 9;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8rem;
-  background-color: rgb(31, 31, 31);
+  background-color: black;
+  background-size: 60cm;
+}
+
+.first-segment {
+  background-image: url("/images/art-1.jpg");
+  height: 100vh;
+}
+
+.first-segment h1 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2cm;
+}
+
+.pokemon {
+  height: 50vh;
+}
+
+.grade-calc {
+  height: 50vh;
+}
+
+.grade-calc img {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.tic-tac-toe {
+  height: 50vh;
+}
+
+.tic-tac-toe img {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: right;
 }
