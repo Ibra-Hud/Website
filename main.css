@@ -24,8 +24,6 @@ body {
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   padding: 1rem 9%;
   background-color: transparent;
@@ -38,7 +36,7 @@ header {
 }
 
 .logo h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #7fffd4;
   font-size: 800;
   cursor: pointer;
@@ -89,7 +87,7 @@ nav a.active {
 
   nav a {
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 3rem 0;
   }
 
@@ -102,10 +100,15 @@ nav a.active {
 }
 
 section {
+  min-height: 50vh;
   padding: 5rem 9% 5rem 9%;
-  size: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: black;
+  background-size: 60cm;
 }
-
 .home {
   min-height: 100vh;
   height: fit-content;
@@ -116,7 +119,7 @@ section {
   align-items: center;
   gap: 8rem;
   background-image: url(/images/raphael-lopes-2mv4b5YfnFA-unsplash.jpg);
-  background-size: 180vh;
+  background-size: 185vh;
   background-position: center;
 }
 
@@ -140,13 +143,6 @@ span {
   font-size: 5rem;
   margin-bottom: 1rem;
   font-weight: 700;
-}
-
-.social-icons a:hover {
-  color: black;
-  transform: scale(1.3) translate();
-  background-color: #fa6e49;
-  box-shadow: 0 0 25px #fa6e49;
 }
 
 .btn:hover {
@@ -595,4 +591,91 @@ span {
 
 .home-img img {
   margin-top: 4rem;
+}
+
+/*Former "Experience" page CSS */
+
+.work {
+  position: relative;
+  background-image: url(/images/jonathan-bean-sbZU1j31ggE-unsplash.jpg);
+  background-size: 185vh;
+  background-position: center;
+}
+
+.work h2 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2cm;
+}
+
+.work-experience h4 {
+  font-size: medium;
+  position: relative;
+}
+
+.work-experience p {
+  font-size: medium;
+  position: relative;
+}
+
+.school {
+  background-size: 185vh;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/kristine-kozaka-Z9xPTZfRvNw-unsplash.jpg);
+}
+
+.school h3 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2cm;
+}
+
+.school-experience h4 {
+  font-size: medium;
+  position: relative;
+  display: flex;
+}
+
+.school-experience p {
+  font-size: medium;
+  position: relative;
+  display: flex;
+}
+
+.apiary {
+  background-size: 185vh;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/porch.JPG);
+}
+
+.apiary h3 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2cm;
+}
+
+.apiary-details h4 {
+  font-size: medium;
+  position: relative;
+  display: flex;
+}
+
+.apiary-details p {
+  font-size: medium;
+  position: relative;
+  display: flex;
 }
